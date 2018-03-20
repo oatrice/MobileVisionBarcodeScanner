@@ -33,8 +33,6 @@ allprojects {
     }
 }
 
-tasks.findByPath(":barcodescanner:javadoc").enabled = false
-
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
