@@ -57,19 +57,18 @@ public class MainActivity extends AppCompatActivity implements BarcodeRetriever 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         barcodeCapture = (BarcodeCapture) getSupportFragmentManager().findFragmentById(barcode);
         barcodeCapture.setRetrieval(this);
 
-        fromXMl = (CheckBox) findViewById(R.id.from_xml);
-        pause = (CheckBox) findViewById(R.id.pause);
-        drawRect = (SwitchCompat) findViewById(R.id.draw_rect);
-        autoFocus = (SwitchCompat) findViewById(R.id.focus);
-        supportMultiple = (SwitchCompat) findViewById(R.id.support_multiple);
-        touchBack = (SwitchCompat) findViewById(R.id.touch_callback);
-        drawText = (SwitchCompat) findViewById(R.id.draw_text);
-        flash = (SwitchCompat) findViewById(R.id.on_flash);
-        frontCam = (SwitchCompat) findViewById(R.id.front_cam);
+        fromXMl =  findViewById(R.id.from_xml);
+        pause =  findViewById(R.id.pause);
+        drawRect =  findViewById(R.id.draw_rect);
+        autoFocus =  findViewById(R.id.focus);
+        supportMultiple =  findViewById(R.id.support_multiple);
+        touchBack =  findViewById(R.id.touch_callback);
+        drawText =  findViewById(R.id.draw_text);
+        flash =  findViewById(R.id.on_flash);
+        frontCam =  findViewById(R.id.front_cam);
 
         findViewById(R.id.stop).setOnClickListener(new View.OnClickListener() {
             @Override
